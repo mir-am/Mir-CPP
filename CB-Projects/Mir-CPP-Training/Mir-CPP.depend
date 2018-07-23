@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1532369200 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\mir-cpp\main.cpp
+	<iostream>
+
+1532369932 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\mir-cpp\src\date.cpp
+	"libdate.h"
+	<iostream>
+
+1532369844 e:\archive\amir_archive\amir-personal\projects\mir-cpp\mir-cpp\include\libdate.h
+
+1532370214 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp\main.cpp
+	<iostream>
+	"libdate.h"
+
+1532369844 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp\include\libdate.h
+
+1532369932 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp\src\date.cpp
+	"libdate.h"
+	<iostream>
+
+1532370214 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\main.cpp
+	<iostream>
+	"libdate.h"
+
+1532369844 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\libdate.h
+
+1532369932 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\date.cpp
+	"libdate.h"
+	<iostream>
+

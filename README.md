@@ -1,2 +1,2 @@
 # Mir-CPP
-Mir's C++ Repository
+This repository is created for educational purpose.
