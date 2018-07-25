@@ -1,6 +1,8 @@
 #ifndef DATE_H
 #define DATE_H
 
+#include <string>
+
 
 // A class for handling calendar
 class Date
@@ -9,6 +11,8 @@ class Date
     private:
 
         int day, month, year;
+        std::string dateInString;
+
 
     public:
 
@@ -19,6 +23,12 @@ class Date
         Date& operator -- (); // prefix decrement
 
         void displayDate();
+
+        // Support for cout
+        explicit operator const char*();
+
+        // Integer representation
+        operator int();
 
 
 

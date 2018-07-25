@@ -14,13 +14,19 @@ using namespace std;
 int main()
 {
     Date today(7, 23, 2018);
-    today.displayDate();
 
-    ++today; // Mode date ahead by a day
-    today.displayDate();
+    std::string strDate(static_cast<const char*>(today));
+    int intDate = today;
 
-    --today;
-    today.displayDate(); // Move date backwards by a day
+    cout << strDate << endl;
+    cout << intDate << endl;
+
+//    ++today; // Mode date ahead by a day
+//    today.displayDate();
+//
+//    --today;
+//    today.displayDate(); // Move date backwards by a day
+
 
     return 0;
 }
