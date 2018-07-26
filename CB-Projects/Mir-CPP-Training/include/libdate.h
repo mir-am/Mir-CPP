@@ -28,7 +28,15 @@ class Date
         explicit operator const char*();
 
         // Integer representation
-        operator int();
+        explicit operator int();
+
+        Date operator + (int daysToAdd);
+
+        Date operator - (int daysToSub);
+
+        void operator += (int daysToAdd);
+
+        void operator -= (int daysToSub);
 
 
 

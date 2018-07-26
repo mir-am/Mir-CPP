@@ -47,3 +47,28 @@ Date::operator int()
 {
     return day + month + year;
 }
+
+
+Date Date::operator + (int daysToAdd)
+{
+    Date newDate(month, day + daysToAdd, year);
+    return newDate;
+}
+
+
+Date Date::operator - (int daysToSub)
+{
+    return Date(month, day - daysToSub, year);
+}
+
+
+void Date::operator += (int daysToAdd)
+{
+    day += daysToAdd;
+}
+
+
+void Date::operator -= (int daysToSub)
+{
+    day -= daysToSub;
+}
