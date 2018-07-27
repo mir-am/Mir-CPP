@@ -35,8 +35,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/MyString.h" />
 		<Unit filename="include/libdate.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/MyString.cpp" />
 		<Unit filename="src/date.cpp" />
 		<Extensions>
 			<code_completion />

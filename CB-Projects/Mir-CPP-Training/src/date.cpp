@@ -72,3 +72,53 @@ void Date::operator -= (int daysToSub)
 {
     day -= daysToSub;
 }
+
+
+bool Date::operator == (const Date& compareTo)
+{
+    return ((day == compareTo.day) && (month == compareTo.month)
+             && (year == compareTo.year));
+}
+
+
+bool Date::operator != (const Date& compateTo)
+{
+    return !(this->operator==(compateTo));
+}
+
+
+bool Date::operator < (const Date& compareTo)
+{
+    if(year < compareTo.year)
+        return true;
+    else if(month > compareTo.month)
+        return true;
+    else if (day < compareTo.day)
+        return true;
+    else
+        return false;
+}
+
+
+bool Date::operator > (const Date& compareTo)
+{
+    return !(this->operator < (compareTo));
+}
+
+
+bool Date::operator <= (const Date& compareTo)
+{
+    if(this->operator== (compareTo))
+        return true;
+    else
+        return this->operator< (compareTo);
+}
+
+
+bool Date::operator >= (const Date& compareTo)
+{
+    if(this->operator== (compareTo))
+        return true;
+    else
+        return this->operator> (compareTo);
+}

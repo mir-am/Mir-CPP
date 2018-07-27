@@ -38,6 +38,18 @@ class Date
 
         void operator -= (int daysToSub);
 
+        bool operator == (const Date& compareTo);
+
+        bool operator != (const Date& compareTo);
+
+        bool operator < (const Date& compareTo);
+
+        bool operator > (const Date& compareTo);
+
+        bool operator <= (const Date& compareTo);
+
+        bool operator >= (const Date& compareTo);
+
 
 
 };

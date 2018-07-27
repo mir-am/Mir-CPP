@@ -18,15 +18,16 @@
 	"libdate.h"
 	<iostream>
 
-1532595256 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\main.cpp
+1532680972 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\main.cpp
 	<iostream>
 	<memory>
 	"libdate.h"
+	"MyString.h"
 
-1532595089 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\libdate.h
+1532678372 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\libdate.h
 	<string>
 
-1532595142 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\date.cpp
+1532679552 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\date.cpp
 	"libdate.h"
 	<iostream>
 	<sstream>
@@ -42,4 +43,11 @@
 	"libdate.h"
 	<iostream>
 	<sstream>
+
+1532681427 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\mystring.cpp
+	"MyString.h"
+	<string.h>
+	<iostream>
+
+1532681244 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\mystring.h
 

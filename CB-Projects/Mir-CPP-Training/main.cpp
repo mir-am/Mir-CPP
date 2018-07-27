@@ -9,40 +9,27 @@ This project is created for educational purpose.
 #include <iostream>
 #include <memory>
 #include "libdate.h"
+#include "MyString.h"
 
 using namespace std;
 
 int main()
 {
-    Date today(7, 23, 2018);
 
-    // Smart pointers
-    unique_ptr<Date> smartDate(new Date(7, 26, 2018));
+    Date holiday1(12, 25, 2016);
+    Date holiday2(12, 31, 2016);
 
-    string strDate(static_cast<const char*>(today));
-    int intDate = static_cast<int>(today);
+    cout << "Holiday1 is: " << static_cast<const char*>(holiday1) << endl;
+    cout << "Holiday 2 is: ";
+    holiday2.displayDate();
 
-    cout << strDate << endl;
-    cout << intDate << endl;
+    if(holiday1 < holiday2)
+        cout << "Holiday 1 happens first." << endl;
 
-    smartDate->displayDate();
+    MyString myStr("I love C++.");
 
-    Date Holiday(12, 25, 2016);
-    Holiday.displayDate();
-
-    // Add five days
-    Date nextHoliday(Holiday + 6);
-    nextHoliday.displayDate();
-
-    Date perviousDate(today - 10);
-    perviousDate.displayDate();
-
-    (*smartDate) += 2;
-    smartDate->displayDate();
-
-    (*smartDate) -= 20;
-    smartDate->displayDate();
-
+    // An example of shallow copy
+    useMyString(myStr);
 
 
     return 0;
