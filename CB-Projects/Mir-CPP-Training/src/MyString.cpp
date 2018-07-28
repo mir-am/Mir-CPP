@@ -36,6 +36,24 @@ MyString::MyString(const MyString& copySource)
 }
 
 
+MyString& MyString::operator = (const MyString& copySource)
+{
+    if((this != &copySource) && (copySource.buffer != NULL))
+    {
+        if(buffer != NULL)
+            delete[] buffer;
+
+        // Deep copy
+        buffer = new char[strlen(copySource.buffer) + 1];
+
+        // Copy from the source into local buffer
+        strcpy(buffer, copySource.buffer);
+    }
+
+    return *this;
+}
+
+
 MyString::~MyString()
 {
     std::cout << "Clearing up the string's buffer..." << std::endl;
@@ -43,7 +61,20 @@ MyString::~MyString()
 }
 
 
-int MyString::getLength()
+MyString::operator const char*()
+{
+    return buffer;
+}
+
+
+const char& MyString::operator [] (int index) const
+{
+    if(index < getLength())
+        return buffer[index];
+}
+
+
+int MyString::getLength() const
 {
     return strlen(buffer);
 }

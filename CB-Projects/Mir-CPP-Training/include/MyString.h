@@ -20,9 +20,16 @@ class MyString
         // Copy constructor
         MyString(const MyString& copySource);
 
+        // Copy assignment operator
+        MyString& operator = (const MyString& copySource);
+
         ~MyString();
 
-        int getLength();
+        operator const char*();
+
+        const char& operator [] (int index) const;
+
+        int getLength() const;
 
         const char* getString();
 

@@ -16,20 +16,17 @@ using namespace std;
 int main()
 {
 
-    Date holiday1(12, 25, 2016);
-    Date holiday2(12, 31, 2016);
-
-    cout << "Holiday1 is: " << static_cast<const char*>(holiday1) << endl;
-    cout << "Holiday 2 is: ";
-    holiday2.displayDate();
-
-    if(holiday1 < holiday2)
-        cout << "Holiday 1 happens first." << endl;
 
     MyString myStr("I love C++.");
+    MyString string1("Python is great.");
 
     // An example of shallow copy
     useMyString(myStr);
+
+    for(int i = 0; i < myStr.getLength(); ++i)
+        cout << myStr[i] << " ";
+    cout << endl;
+
 
 
     return 0;
