@@ -18,14 +18,14 @@ int main()
 
 
     MyString myStr("I love C++.");
-    MyString string1("Python is great.");
+    MyString string1(" Python is great.");
+    MyString string2(" But it's slow!");
 
-    // An example of shallow copy
-    useMyString(myStr);
+    MyString sayHelloAgain("overwrite this");
 
-    for(int i = 0; i < myStr.getLength(); ++i)
-        cout << myStr[i] << " ";
-    cout << endl;
+    sayHelloAgain = myStr + string1 + string2;
+
+    cout << sayHelloAgain << endl;
 
 
 

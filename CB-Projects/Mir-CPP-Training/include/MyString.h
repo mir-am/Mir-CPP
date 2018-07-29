@@ -13,6 +13,9 @@ class MyString
 
         char* buffer;
 
+        //Private default constructor
+        MyString();
+
     public:
 
         MyString(const char* initString);
@@ -23,11 +26,20 @@ class MyString
         // Copy assignment operator
         MyString& operator = (const MyString& copySource);
 
+        // Move constructor
+        MyString(MyString&& moveSrc);
+
+        // Move assignment operator
+        MyString& operator = (MyString&& moveSrc);
+
         ~MyString();
 
         operator const char*();
 
         const char& operator [] (int index) const;
+
+        // Concat strings
+        MyString operator + (const MyString& addThis);
 
         int getLength() const;
 

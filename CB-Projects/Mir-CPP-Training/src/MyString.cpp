@@ -3,6 +3,13 @@
 #include <iostream>
 
 
+MyString::MyString(): buffer(NULL)
+{
+    std::cout << "Default constructor called..." << std::endl;
+}
+
+
+
 MyString::MyString(const char* initString)
 {
     buffer = NULL;
@@ -20,6 +27,9 @@ MyString::MyString(const char* initString)
 
 MyString::MyString(const MyString& copySource)
 {
+
+    std::cout << "Copy constructor copies: " << copySource.buffer << std::endl;
+
     buffer = NULL;
 
     if(copySource.buffer != NULL)
@@ -38,6 +48,9 @@ MyString::MyString(const MyString& copySource)
 
 MyString& MyString::operator = (const MyString& copySource)
 {
+
+    std::cout << "Copy assignment op. copies: " << copySource.buffer << std::endl;
+
     if((this != &copySource) && (copySource.buffer != NULL))
     {
         if(buffer != NULL)
@@ -54,10 +67,39 @@ MyString& MyString::operator = (const MyString& copySource)
 }
 
 
+MyString::MyString(MyString&& moveSrc)
+{
+    std::cout << "Move constructor moves: " << moveSrc.buffer << std::endl;
+
+    if(moveSrc.buffer != NULL)
+    {
+        buffer = moveSrc.buffer; // take ownership
+        moveSrc.buffer = NULL; // free move source
+    }
+}
+
+
+MyString& MyString::operator = (MyString&& moveSrc)
+{
+    std::cout << "Move assignment op. moves: " << moveSrc.buffer << std::endl;
+
+    if((moveSrc != NULL) && (this != &moveSrc))
+    {
+        delete[] buffer; // release own buffer
+
+        buffer = moveSrc.buffer;
+        moveSrc.buffer = NULL;
+    }
+}
+
+
 MyString::~MyString()
 {
-    std::cout << "Clearing up the string's buffer..." << std::endl;
-    delete[] buffer;
+    if(buffer != NULL)
+    {
+        std::cout << "Clearing up the string's buffer..." << std::endl;
+        delete[] buffer;
+    }
 }
 
 
@@ -71,6 +113,21 @@ const char& MyString::operator [] (int index) const
 {
     if(index < getLength())
         return buffer[index];
+}
+
+
+MyString MyString::operator + (const MyString& addThis)
+{
+    MyString newStr;
+
+    if(addThis.buffer != NULL)
+    {
+        newStr.buffer = new char[this->getLength() + strlen(addThis.buffer) + 1];
+        strcpy(newStr.buffer, buffer);
+        strcat(newStr.buffer, addThis.buffer);
+    }
+
+    return newStr;
 }
 
 
