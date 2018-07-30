@@ -36,10 +36,12 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/MyString.h" />
+		<Unit filename="include/fish.h" />
 		<Unit filename="include/libdate.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/MyString.cpp" />
 		<Unit filename="src/date.cpp" />
+		<Unit filename="src/fish.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

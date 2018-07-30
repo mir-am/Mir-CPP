@@ -10,24 +10,17 @@ This project is created for educational purpose.
 #include <memory>
 #include "libdate.h"
 #include "MyString.h"
+#include "fish.h"
 
 using namespace std;
 
 int main()
 {
+    Carp myLunch;
+    Tuna myDinner;
 
-
-    MyString myStr("I love C++.");
-    MyString string1(" Python is great.");
-    MyString string2(" But it's slow!");
-
-    MyString sayHelloAgain("overwrite this");
-
-    sayHelloAgain = myStr + string1 + string2;
-
-    cout << sayHelloAgain << endl;
-
-
+    myLunch.Swim();
+    myDinner.Swim();
 
     return 0;
 }
