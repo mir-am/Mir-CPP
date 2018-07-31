@@ -11,19 +11,18 @@ This project is created for educational purpose.
 #include "libdate.h"
 #include "MyString.h"
 #include "fish.h"
+#include "car.h"
+
 
 using namespace std;
 
 int main()
 {
-    Carp myLunch;
-    Tuna myDinner;
+    Car myDreamCar;
+    myDreamCar.moveCar();
 
-    myLunch.Swim();
-    myDinner.Swim();
-
-    // Invoking overridden methods of a base class
-    myDinner.Fish::Swim();
+    RaceCar myRaceCar;
+    myRaceCar.moveCar();
 
     return 0;
 }

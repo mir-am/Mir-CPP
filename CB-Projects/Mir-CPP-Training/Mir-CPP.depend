@@ -52,9 +52,15 @@
 
 1532852925 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\mystring.h
 
-1533051796 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\fish.cpp
+1533052418 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\fish.cpp
 	"fish.h"
 	<iostream>
 
 1533052314 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\fish.h
+
+1533053182 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\car.cpp
+	"car.h"
+	<iostream>
+
+1533054213 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\car.h
 
