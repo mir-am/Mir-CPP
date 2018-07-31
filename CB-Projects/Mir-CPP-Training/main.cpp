@@ -22,5 +22,8 @@ int main()
     myLunch.Swim();
     myDinner.Swim();
 
+    // Invoking overridden methods of a base class
+    myDinner.Fish::Swim();
+
     return 0;
 }

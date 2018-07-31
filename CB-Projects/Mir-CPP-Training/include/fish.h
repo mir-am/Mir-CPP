@@ -12,6 +12,8 @@ class Fish
 
         Fish(bool isFreshWater);
 
+        ~Fish();
+
         void Swim();
 
 };
@@ -23,6 +25,11 @@ class Tuna: public Fish
 
         Tuna();
 
+        ~Tuna();
+
+        // Overriding the base class method
+        void Swim();
+
 };
 
 
@@ -31,6 +38,10 @@ class Carp: public Fish
     public:
 
         Carp();
+
+        ~Carp();
+
+        void Swim();
 
 };
 
