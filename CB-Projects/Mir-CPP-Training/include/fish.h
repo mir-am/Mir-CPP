@@ -12,9 +12,12 @@ class Fish
 
         Fish(bool isFreshWater);
 
-        ~Fish();
+        // Virtual destructor
+        virtual ~Fish();
 
-        void Swim();
+        // Virtual function to make sure that an object of derived class
+        // can invoke right swim function.
+        virtual void Swim();
 
 };
 
@@ -44,5 +47,10 @@ class Carp: public Fish
         void Swim();
 
 };
+
+
+void makeFishSwim(Fish& inputFish);
+
+void deleteFishMemory(Fish* pFish);
 
 #endif // FISH_H

@@ -63,3 +63,15 @@ void Carp::Swim()
     // Invoking methods of a base class in a derived class
     Fish::Swim();
 }
+
+
+void makeFishSwim(Fish& inputFish)
+{
+    inputFish.Swim();
+}
+
+
+void deleteFishMemory(Fish* pFish)
+{
+    delete pFish;
+}
