@@ -8,6 +8,12 @@ Fish::Fish(bool isFreshWater)
     std::cout << "Fish constructor" << std::endl;
 }
 
+
+Fish* Fish::Clone()
+{
+    return new Fish (*this);
+}
+
 void Fish::Swim()
 {
 
@@ -36,6 +42,11 @@ Tuna::~Tuna()
     std::cout << "Tuna destructor..." << std::endl;
 }
 
+Fish* Tuna::Clone()
+{
+    return new Tuna(*this);
+}
+
 
 void Tuna::Swim()
 {
@@ -56,12 +67,18 @@ Carp::~Carp()
 }
 
 
+Fish* Carp::Clone()
+{
+    return new Carp(*this);
+}
+
+
 void Carp::Swim()
 {
     std::cout << "Carp swims real slow." << std::endl;
 
     // Invoking methods of a base class in a derived class
-    Fish::Swim();
+    //Fish::Swim();
 }
 
 

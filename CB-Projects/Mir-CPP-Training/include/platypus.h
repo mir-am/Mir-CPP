@@ -2,8 +2,19 @@
 #define PLATYPUS_H
 
 // An example of multiple inheritance
+// Diamond problem which solved by virtual inheritance
 
-class Mammal
+class Animal
+{
+    public:
+
+        int age;
+
+        Animal();
+};
+
+
+class Mammal: public virtual Animal
 {
     public:
 
@@ -11,7 +22,7 @@ class Mammal
 };
 
 
-class Reptile
+class Reptile: public virtual Animal
 {
     public:
 
@@ -19,7 +30,7 @@ class Reptile
 };
 
 
-class Bird
+class Bird: public virtual Animal
 {
     public:
 
@@ -28,9 +39,11 @@ class Bird
 };
 
 
-class Platypus: public Mammal, public Bird, public Reptile
+class Platypus final : public Mammal, public Bird, public Reptile
 {
     public:
+
+        Platypus();
 
         void swim();
 

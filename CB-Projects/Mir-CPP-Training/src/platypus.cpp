@@ -2,6 +2,12 @@
 #include <iostream>
 
 
+Animal::Animal()
+{
+    std::cout << "Animal constructor" << std::endl;
+}
+
+
 void Mammal::feedBabyMilk()
 {
     std::cout << "Mammal: baby says glug!" << std::endl;
@@ -17,6 +23,12 @@ void Reptile::splitVenom()
 void Bird::layEggs()
 {
     std::cout << "Bird: Laid my eggs..." << std::endl;
+}
+
+
+Platypus::Platypus()
+{
+    std::cout << "Platypus constructor..." << std::endl;
 }
 
 

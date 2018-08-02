@@ -15,6 +15,9 @@ class Fish
         // Virtual destructor
         virtual ~Fish();
 
+        // A virtual copy constructor. It's workaround.
+        virtual Fish* Clone();
+
         // Virtual function to make sure that an object of derived class
         // can invoke right swim function.
         virtual void Swim();
@@ -30,8 +33,10 @@ class Tuna: public Fish
 
         ~Tuna();
 
+        Fish* Clone() override;
+
         // Overriding the base class method
-        void Swim();
+        void Swim() override;
 
 };
 
@@ -44,7 +49,9 @@ class Carp: public Fish
 
         ~Carp();
 
-        void Swim();
+        Fish* Clone() override;
+
+        void Swim() override;
 
 };
 
