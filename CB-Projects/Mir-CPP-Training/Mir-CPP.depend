@@ -18,7 +18,7 @@
 	"libdate.h"
 	<iostream>
 
-1533196856 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\main.cpp
+1533294094 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\main.cpp
 	<iostream>
 	<memory>
 	"libdate.h"
@@ -26,6 +26,7 @@
 	"fish.h"
 	"car.h"
 	"platypus.h"
+	"casting.h"
 
 1532678372 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\libdate.h
 	<string>
@@ -71,4 +72,13 @@
 	<iostream>
 
 1533196646 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\platypus.h
+
+1533295263 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\casting.cpp
+	"casting.h"
+	<iostream>
+	"car.h"
+
+1533295611 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\casting.h
+	"fish.h"
+	"MyString.h"
 

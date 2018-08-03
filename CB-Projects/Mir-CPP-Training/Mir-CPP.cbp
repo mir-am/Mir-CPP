@@ -37,12 +37,14 @@
 		</Compiler>
 		<Unit filename="include/MyString.h" />
 		<Unit filename="include/car.h" />
+		<Unit filename="include/casting.h" />
 		<Unit filename="include/fish.h" />
 		<Unit filename="include/libdate.h" />
 		<Unit filename="include/platypus.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/MyString.cpp" />
 		<Unit filename="src/car.cpp" />
+		<Unit filename="src/casting.cpp" />
 		<Unit filename="src/date.cpp" />
 		<Unit filename="src/fish.cpp" />
 		<Unit filename="src/platypus.cpp" />
