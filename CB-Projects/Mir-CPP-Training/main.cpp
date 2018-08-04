@@ -14,6 +14,7 @@ This project is created for educational purpose.
 #include "car.h"
 #include "platypus.h"
 #include "casting.h"
+#include "macro_func.h"
 
 
 using namespace std;
@@ -21,10 +22,15 @@ using namespace std;
 int main()
 {
 
-    Tuna myDinner;
-    Carp myLunch;
+    int num = 1;
+    int num1;
 
-    detectFishType(&myDinner);
-    detectFishType(&myLunch);
+    cout << "Enter a number" << endl;
+    cin >> num1;
+
+
+    cout <<"2 ^ 2: " << SQUARE(2) << endl;
+    cout << "Min(" << num << "," << num1 << "): " << MIN(num, num1) << endl;
+    cout << "Max(" << num << "," << num1 << "): " << MAX(3, 5.5) << endl;
 
 }

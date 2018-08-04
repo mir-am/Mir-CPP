@@ -36,14 +36,21 @@
 	<iostream>
 	<sstream>
 
-1532528449 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
+1533392110 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
 	<iostream>
+	<memory>
 	"libdate.h"
+	"MyString.h"
+	"fish.h"
+	"car.h"
+	"platypus.h"
+	"casting.h"
+	"macro_func.h"
 
-1532528718 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/libdate.h
+1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/libdate.h
 	<string>
 
-1532528701 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/date.cpp
+1533391472 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/date.cpp
 	"libdate.h"
 	<iostream>
 	<sstream>
@@ -81,4 +88,43 @@
 1533295611 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\casting.h
 	"fish.h"
 	"MyString.h"
+
+1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/MyString.h
+
+1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/fish.h
+
+1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/car.h
+
+1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/platypus.h
+
+1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/casting.h
+	"fish.h"
+	"MyString.h"
+
+1533391472 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/car.cpp
+	"car.h"
+	<iostream>
+
+1533391472 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/casting.cpp
+	"casting.h"
+	<iostream>
+	"car.h"
+
+1533391472 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/fish.cpp
+	"fish.h"
+	<iostream>
+
+1533391472 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/MyString.cpp
+	"MyString.h"
+	<string.h>
+	<iostream>
+
+1533391472 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/platypus.cpp
+	"platypus.h"
+	<iostream>
+
+1533391906 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/macro_func.cpp
+	"macro_func.h"
+
+1533391899 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/macro_func.h
 

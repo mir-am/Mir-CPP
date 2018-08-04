@@ -40,6 +40,7 @@
 		<Unit filename="include/casting.h" />
 		<Unit filename="include/fish.h" />
 		<Unit filename="include/libdate.h" />
+		<Unit filename="include/macro_func.h" />
 		<Unit filename="include/platypus.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/MyString.cpp" />
@@ -47,6 +48,7 @@
 		<Unit filename="src/casting.cpp" />
 		<Unit filename="src/date.cpp" />
 		<Unit filename="src/fish.cpp" />
+		<Unit filename="src/macro_func.cpp" />
 		<Unit filename="src/platypus.cpp" />
 		<Extensions>
 			<code_completion />
