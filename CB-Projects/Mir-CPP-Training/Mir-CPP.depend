@@ -36,7 +36,7 @@
 	<iostream>
 	<sstream>
 
-1533392110 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
+1533478560 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
 	<iostream>
 	<memory>
 	"libdate.h"
@@ -46,6 +46,7 @@
 	"platypus.h"
 	"casting.h"
 	"macro_func.h"
+	"template_expample.h"
 
 1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/libdate.h
 	<string>
@@ -127,4 +128,9 @@
 	"macro_func.h"
 
 1533391899 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/macro_func.h
+
+1533478483 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/template_expample.cpp
+	"template_expample.h"
+
+1533479260 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/template_expample.h
 

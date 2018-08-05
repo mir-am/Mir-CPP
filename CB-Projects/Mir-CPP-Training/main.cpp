@@ -15,6 +15,7 @@ This project is created for educational purpose.
 #include "platypus.h"
 #include "casting.h"
 #include "macro_func.h"
+#include "template_expample.h"
 
 
 using namespace std;
@@ -22,15 +23,11 @@ using namespace std;
 int main()
 {
 
-    int num = 1;
-    int num1;
 
-    cout << "Enter a number" << endl;
-    cin >> num1;
+   HoldsPair<int, double> holds(10, 3.14);
 
 
-    cout <<"2 ^ 2: " << SQUARE(2) << endl;
-    cout << "Min(" << num << "," << num1 << "): " << MIN(num, num1) << endl;
-    cout << "Max(" << num << "," << num1 << "): " << MAX(3, 5.5) << endl;
+    return 0;
+
 
 }
