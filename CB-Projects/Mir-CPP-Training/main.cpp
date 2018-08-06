@@ -16,6 +16,7 @@ This project is created for educational purpose.
 #include "casting.h"
 #include "macro_func.h"
 #include "template_expample.h"
+#include <myvector.h>
 
 
 using namespace std;
@@ -23,14 +24,11 @@ using namespace std;
 int main()
 {
 
+    MyVector<int> vecInt(10);
 
-    StaticTest<int> staticObj1;
-    StaticTest<int> staticObj2;
+    MyVector<int> vecIntDef;
 
-    staticObj1.staticVal = 2011;
-
-    cout << staticObj1.staticVal << endl;
-    cout << staticObj2.staticVal << endl;
+    MyVector<double> vecDouble(20);
 
 
 

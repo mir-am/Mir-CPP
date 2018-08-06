@@ -36,7 +36,7 @@
 	<iostream>
 	<sstream>
 
-1533564510 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
+1533565448 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
 	<iostream>
 	<memory>
 	"libdate.h"
@@ -47,6 +47,7 @@
 	"casting.h"
 	"macro_func.h"
 	"template_expample.h"
+	<myvector.h>
 
 1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/libdate.h
 	<string>
@@ -135,4 +136,10 @@
 1533564594 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/template_expample.h
 	<iostream>
 	<string>
+
+1533565067 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/myvector.cpp
+	"myvector.h"
+
+1533565529 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/myvector.h
+	<string.h>
 
