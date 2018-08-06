@@ -36,7 +36,7 @@
 	<iostream>
 	<sstream>
 
-1533478560 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
+1533564510 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
 	<iostream>
 	<memory>
 	"libdate.h"
@@ -132,5 +132,7 @@
 1533478483 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/template_expample.cpp
 	"template_expample.h"
 
-1533479260 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/template_expample.h
+1533564594 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/template_expample.h
+	<iostream>
+	<string>
 

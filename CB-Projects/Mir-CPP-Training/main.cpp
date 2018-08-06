@@ -24,7 +24,17 @@ int main()
 {
 
 
-   HoldsPair<int, double> holds(10, 3.14);
+    StaticTest<int> staticObj1;
+    StaticTest<int> staticObj2;
+
+    staticObj1.staticVal = 2011;
+
+    cout << staticObj1.staticVal << endl;
+    cout << staticObj2.staticVal << endl;
+
+
+
+
 
 
     return 0;
