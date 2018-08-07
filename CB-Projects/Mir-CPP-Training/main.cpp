@@ -26,9 +26,20 @@ int main()
 
     MyVector<int> vecInt(10);
 
-    MyVector<int> vecIntDef;
+     // Try to assign a value
+    vecInt[3] = 5;
+    vecInt[2] = 12;
+
+    MyVector<int> vecIntDef(vecInt);
 
     MyVector<double> vecDouble(20);
+
+
+
+    cout << vecIntDef[3] << " " << vecIntDef[2] << endl;
+
+    cout << vecInt << endl;
+
 
 
 
