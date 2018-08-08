@@ -5,6 +5,10 @@
 #include <string.h>
 
 
+// A function pointer
+typedef void(*func)(int);
+
+
 // Copy elements of a vector to another
 template <typename T>
 void vecCopy(T* sourceBuffer, T* destBuffer, size_t bufferSize)
@@ -83,19 +87,6 @@ class MyVector
             return buffer[index];
         }
 
-        // printing elements of an array with cout
-        std::ostream& operator << (std::ostream& out, const MyVector& vec)
-        {
-            for(int i = 0; i < numVecElements; ++i)
-            {
-                out << buffer[i];
-            }
-
-            out << std::endl;
-
-            return out;
-        }
-
 
 //        MyVector& operator=(const MyVector& other);
 
@@ -103,5 +94,26 @@ class MyVector
 
 };
 
+// printing elements of an array with cout
+template <typename T>
+std::ostream& operator << (std::ostream& out, const MyVector<T>& vec)
+{
+    for(size_t i = 0; i < vec.getLength(); ++i)
+    {
+        out << vec[i] << " ";
+    }
+
+    out << std::endl;
+
+    return out;
+}
+
+// Fill array with arbitrary function
+template<typename T>
+void fillVec(MyVector<T>& vec, func)
+{
+    for(size_t i = 0; i < vec.getLength(); ++i)
+        vec[i] = func(i);
+}
 
 #endif // MYVECTOR_H

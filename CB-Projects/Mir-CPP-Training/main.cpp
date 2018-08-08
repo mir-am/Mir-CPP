@@ -17,34 +17,21 @@ This project is created for educational purpose.
 #include "macro_func.h"
 #include "template_expample.h"
 #include <myvector.h>
+#include <math.h>
 
+#define PI 3.14159265
 
 using namespace std;
 
 int main()
 {
 
-    MyVector<int> vecInt(10);
+    MyVector<int> vecInt(100);
 
-     // Try to assign a value
-    vecInt[3] = 5;
-    vecInt[2] = 12;
-
-    MyVector<int> vecIntDef(vecInt);
-
-    MyVector<double> vecDouble(20);
-
-
-
-    cout << vecIntDef[3] << " " << vecIntDef[2] << endl;
 
     cout << vecInt << endl;
 
-
-
-
-
-
+    fillVec(vecInt, [](int i){return sin(i * PI / 180);})
 
     return 0;
 
