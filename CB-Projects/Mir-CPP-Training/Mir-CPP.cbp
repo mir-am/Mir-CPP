@@ -12,7 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-std=c++11" />
+					<Add option="-std=c++14" />
 					<Add option="-g" />
 					<Add directory="include" />
 				</Compiler>
@@ -42,6 +42,7 @@
 		<Unit filename="include/fish.h" />
 		<Unit filename="include/libdate.h" />
 		<Unit filename="include/macro_func.h" />
+		<Unit filename="include/metaprograms.h" />
 		<Unit filename="include/myvector.h" />
 		<Unit filename="include/platypus.h" />
 		<Unit filename="include/template_expample.h" />
@@ -52,6 +53,7 @@
 		<Unit filename="src/date.cpp" />
 		<Unit filename="src/fish.cpp" />
 		<Unit filename="src/macro_func.cpp" />
+		<Unit filename="src/metaprograms.cpp" />
 		<Unit filename="src/myvector.cpp" />
 		<Unit filename="src/platypus.cpp" />
 		<Unit filename="src/template_expample.cpp" />
