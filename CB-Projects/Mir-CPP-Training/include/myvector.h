@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string.h>
+#include <functional>
 
 /**
 
@@ -13,7 +14,7 @@
 */
 
 // A function pointer
-typedef void(*func)(int);
+//typedef void(*func)(int);
 
 
 /**
@@ -144,7 +145,16 @@ class MyVector
 
 };
 
-// printing elements of an array with cout
+/**
+    Prints elements of a vector using cout operator.
+    Example:
+
+    @code
+    MyVector<int> vecInt(5);
+    std::cout << vecInt << std::endl;
+    @endcode
+
+*/
 template <typename T>
 std::ostream& operator << (std::ostream& out, const MyVector<T>& vec)
 {
@@ -160,7 +170,7 @@ std::ostream& operator << (std::ostream& out, const MyVector<T>& vec)
 
 // Fill array with arbitrary function
 template<typename T>
-void fillVec(MyVector<T>& vec, func)
+void fillVec(MyVector<T>& vec, std::function<float(int)>func )
 {
     for(size_t i = 0; i < vec.getLength(); ++i)
         vec[i] = func(i);

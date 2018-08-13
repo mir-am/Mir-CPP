@@ -30,8 +30,9 @@ int main()
 
     MyVector<int> vecInt(100);
 
-    short userInt;
-    long long numberForTest;
+    fillVec(vecInt, [](int i){return i + 2;});
+
+    cout << vecInt << endl;
 
 
     //fillVec(vecInt, [](int i){return sin(i * PI / 180);})

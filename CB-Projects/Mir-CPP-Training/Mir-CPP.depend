@@ -237,9 +237,10 @@
 	<iostream>
 	<string>
 
-1534183023 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\myvector.h
+1534186636 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\myvector.h
 	<iostream>
 	<string.h>
+	<functional>
 
 1534183023 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\metaprograms.h
 	<math.h>
