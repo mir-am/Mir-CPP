@@ -46,6 +46,7 @@
 		<Unit filename="include/myvector.h" />
 		<Unit filename="include/platypus.h" />
 		<Unit filename="include/template_expample.h" />
+		<Unit filename="include/timer.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/MyString.cpp" />
 		<Unit filename="src/car.cpp" />
@@ -57,6 +58,7 @@
 		<Unit filename="src/myvector.cpp" />
 		<Unit filename="src/platypus.cpp" />
 		<Unit filename="src/template_expample.cpp" />
+		<Unit filename="src/timer.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

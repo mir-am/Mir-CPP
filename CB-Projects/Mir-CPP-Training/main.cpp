@@ -19,6 +19,7 @@ This project is created for educational purpose.
 #include <myvector.h>
 #include <math.h>
 #include <metaprograms.h>
+#include <timer.h>
 
 #define PI 3.14159265
 
@@ -29,14 +30,9 @@ int main()
 
     MyVector<int> vecInt(100);
 
-    int userInt;
+    short userInt;
+    long long numberForTest;
 
-    cout << vecInt << endl;
-
-    cout << "Enter a number: ";
-    cin >> userInt;
-
-    cout << isPrime(userInt) << endl;
 
     //fillVec(vecInt, [](int i){return sin(i * PI / 180);})
 

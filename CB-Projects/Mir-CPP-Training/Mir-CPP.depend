@@ -18,7 +18,7 @@
 	"libdate.h"
 	<iostream>
 
-1533294094 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\main.cpp
+1534184976 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\main.cpp
 	<iostream>
 	<memory>
 	"libdate.h"
@@ -27,6 +27,11 @@
 	"car.h"
 	"platypus.h"
 	"casting.h"
+	"macro_func.h"
+	"template_expample.h"
+	<myvector.h>
+	<math.h>
+	<metaprograms.h>
 
 1532678372 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\libdate.h
 	<string>
@@ -82,7 +87,7 @@
 
 1533196646 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\platypus.h
 
-1533295263 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\casting.cpp
+1533295764 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\casting.cpp
 	"casting.h"
 	<iostream>
 	"car.h"
@@ -225,4 +230,35 @@
 	<myvector.h>
 	<math.h>
 	<metaprograms.h>
+
+1534183023 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\macro_func.h
+
+1534183023 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\template_expample.h
+	<iostream>
+	<string>
+
+1534183023 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\myvector.h
+	<iostream>
+	<string.h>
+
+1534183023 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\metaprograms.h
+	<math.h>
+
+1534183023 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\macro_func.cpp
+	"macro_func.h"
+
+1534183023 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\metaprograms.cpp
+	"metaprograms.h"
+
+1534183023 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\myvector.cpp
+	"myvector.h"
+
+1534183023 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\template_expample.cpp
+	"template_expample.h"
+
+1534185559 source:e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\src\timer.cpp
+	"timer.h"
+
+1534185277 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\timer.h
+	<ctime>
 
