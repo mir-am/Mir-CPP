@@ -25,14 +25,42 @@ This project is created for educational purpose.
 
 using namespace std;
 
+template <typename T>
+void useMyVector(MyVector<T> vec)
+{
+    cout << vec.getLength() << endl;
+}
+
+
 int main()
 {
 
-    MyVector<int> vecInt(100);
+    const size_t DIM = 100000;
 
-    fillVec(vecInt, [](int i){return i + 2;});
+    Timer wall_clock;
+    wall_clock.start();
 
-    cout << vecInt << endl;
+    MyVector<int> A(DIM, RAND);
+    MyVector<int> B(DIM, RAND);
+
+    //MyVector<int> vecInt2(50);
+
+    //cout << fixed << A << endl;
+    //cout << fixed << B << endl;
+
+    MyVector<int> C = A + B;
+
+    wall_clock.stop();
+
+    cout << wall_clock.getTimeElapsed() * 1000 << " ms" << endl;
+
+    //fillVec(vecInt, [](int i){return i + 2;});
+
+    //vecInt2 = vecInt;
+
+    //useMyVector(vecInt);
+
+
 
 
     //fillVec(vecInt, [](int i){return sin(i * PI / 180);})

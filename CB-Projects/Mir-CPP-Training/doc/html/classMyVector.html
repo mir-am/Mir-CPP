@@ -99,10 +99,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac356762c5ced52c0d934476cef32e472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyVector.html#ac356762c5ced52c0d934476cef32e472">MyVector</a> ()</td></tr>
 <tr class="separator:ac356762c5ced52c0d934476cef32e472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81b5110be608e01567758f017e66a23c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyVector.html#a81b5110be608e01567758f017e66a23c">MyVector</a> (const unsigned int numElements)</td></tr>
-<tr class="separator:a81b5110be608e01567758f017e66a23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52688de1b382377dab27acd8f2ec0e0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyVector.html#a52688de1b382377dab27acd8f2ec0e0e">MyVector</a> (const unsigned int numElements, fillValue fval=ZERO)</td></tr>
+<tr class="separator:a52688de1b382377dab27acd8f2ec0e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6c36029da3c2bf3e31f52ff003ad85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyVector.html#a8f6c36029da3c2bf3e31f52ff003ad85">MyVector</a> (const <a class="el" href="classMyVector.html">MyVector</a> &amp;other)</td></tr>
 <tr class="separator:a8f6c36029da3c2bf3e31f52ff003ad85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb6f5120b11fe6573f193247b9bc155"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMyVector.html">MyVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyVector.html#a2bb6f5120b11fe6573f193247b9bc155">operator=</a> (const <a class="el" href="classMyVector.html">MyVector</a> &amp;other)</td></tr>
+<tr class="separator:a2bb6f5120b11fe6573f193247b9bc155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe59f181259ff63fa583f4bd87a9737e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyVector.html#abe59f181259ff63fa583f4bd87a9737e">~MyVector</a> ()</td></tr>
 <tr class="separator:abe59f181259ff63fa583f4bd87a9737e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1febc4fc30caa0273bd71d798855369"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMyVector.html#aa1febc4fc30caa0273bd71d798855369">getLength</a> () const </td></tr>
@@ -155,7 +157,7 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a81b5110be608e01567758f017e66a23c"></a>
+<a class="anchor" id="a52688de1b382377dab27acd8f2ec0e0e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -168,8 +170,18 @@ template&lt;typename T&gt; </div>
           <td class="memname"><a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt;::<a class="el" href="classMyVector.html">MyVector</a> </td>
           <td>(</td>
           <td class="paramtype">const unsigned int&#160;</td>
-          <td class="paramname"><em>numElements</em></td><td>)</td>
+          <td class="paramname"><em>numElements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">fillValue&#160;</td>
+          <td class="paramname"><em>fval</em> = <code>ZERO</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -178,9 +190,11 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initiliazes a vector with number of elements spicified. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Initiliazes a vector with number of elements spicified.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">numElements</td><td>Size of vector after initialization. </td></tr>
+    <tr><td class="paramname">fval</td><td>Fill elements of a vector with zeros or random values. This parameter takes two values either ZERO or RAND. </td></tr>
   </table>
   </dd>
 </dl>
@@ -212,7 +226,7 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 <p>Elements of vector are stored on the heap. Therfore, A copy constructor is needed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="classMyVector.html" title="A Vector class for educational purposes. ">MyVector</a></td><td>another object of <a class="el" href="classMyVector.html" title="A Vector class for educational purposes. ">MyVector</a> </td></tr>
+    <tr><td class="paramname">other</td><td>another object of <a class="el" href="classMyVector.html" title="A Vector class for educational purposes. ">MyVector</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -269,6 +283,39 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Returns number of elements in vector. </p><dl class="section return"><dt>Returns</dt><dd>size of vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2bb6f5120b11fe6573f193247b9bc155"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMyVector.html">MyVector</a>&amp; <a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Assings the elements of source vector object to destination vector by deep copy </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>source vector object</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A vector with elements of source vector object. </dd></dl>
 
 </div>
 </div>

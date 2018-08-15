@@ -35,5 +35,5 @@ void Timer::restart()
 
 double Timer::getTimeElapsed()
 {
-    return static_cast<double>(total / CLOCKS_PER_SEC);
+    return  (double) total / CLOCKS_PER_SEC;
 }

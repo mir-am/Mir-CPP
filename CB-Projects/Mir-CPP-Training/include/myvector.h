@@ -16,6 +16,8 @@
 // A function pointer
 //typedef void(*func)(int);
 
+enum fillValue {ZERO, RAND};
+
 
 /**
     Copy elements of a vector from source to destination
@@ -66,34 +68,78 @@ class MyVector
 
         /**
             Initiliazes a vector with number of elements spicified.
+
             @param numElements Size of vector after initialization.
+            @param fval Fill elements of a vector with zeros or random values.
+                        This parameter takes two values either ZERO or RAND.
         */
-        MyVector(const unsigned int numElements)
+        MyVector(const unsigned int numElements, fillValue fval=ZERO)
         {
             buffer = new T[numElements];
             numVecElements = numElements;
 
-            // Initiliaze vector with zero
-            for(unsigned int i = 0; i < numElements; ++i)
-                buffer[i] = 0;
+            switch(fval)
+            {
+                case ZERO:
+
+                    for(unsigned int i = 0; i < numElements; ++i)
+                        buffer[i] = 0;
+
+                    break;
+
+                case RAND:
+
+                    for(unsigned int i = 0; i < numElements; ++i)
+                        buffer[i] = rand();
+
+                    break;
+
+            }
+
         }
 
         /**
             Elements of vector are stored on the heap. Therfore, A copy constructor is needed.
-            @param MyVector another object of MyVector
+            @param other another object of MyVector
         */
         MyVector(const MyVector& other)
         {
             buffer = NULL;
+            numVecElements = 0;
 
             if(other.buffer != NULL)
             {
-                buffer = new T[other.getLength()];
-                vecCopy(other.buffer, buffer, other.getLength());
+                numVecElements = other.getLength();
+                buffer = new T[numVecElements];
+                vecCopy(other.buffer, buffer, numVecElements);
 
                 std::cout << "New buffer points to: " << buffer << std::endl;
             }
 
+        }
+
+        /**
+            Assings the elements of source vector object to destination vector by deep copy
+            @param other source vector object
+
+            @return A vector with elements of source vector object.
+        */
+
+        MyVector& operator = (const MyVector& other)
+        {
+
+            if((this != &other) && (other.buffer != NULL))
+            {
+
+                numVecElements = other.getLength();
+
+                // The destination object's buffer should be freed if It's not NULL
+                if(buffer != NULL)
+                    delete[] buffer;
+
+                buffer = new T[numVecElements];
+                vecCopy(other.buffer, buffer, numVecElements);
+            }
         }
 
         /**
@@ -139,6 +185,7 @@ class MyVector
         }
 
 
+
 //        MyVector& operator=(const MyVector& other);
 
 
@@ -168,7 +215,36 @@ std::ostream& operator << (std::ostream& out, const MyVector<T>& vec)
     return out;
 }
 
-// Fill array with arbitrary function
+/**
+    Performs vector addition in element-wise manner.
+
+    @param x vector object x
+    @param y vector object y
+
+    @return A vector containing the result of x + y.
+*/
+template <typename T>
+MyVector<T> operator + (const MyVector<T>& x, const MyVector<T>& y)
+{
+
+    MyVector<T> vecSum(x.getLength());
+
+    for(size_t i = 0; i < x.getLength(); ++i)
+        vecSum[i] = x[i] + y[i];
+
+    return vecSum;
+
+}
+
+
+/**
+Fills the vector object with arbitrary functions or lambdas.
+
+ @param vec An obeject of MyVector class
+ @param func An arbitrary function
+
+
+*/
 template<typename T>
 void fillVec(MyVector<T>& vec, std::function<float(int)>func )
 {

@@ -86,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">myvector.h File Reference</div>  </div>
@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for myvector.h:</div>
 <div class="dyncontent">
@@ -110,30 +111,94 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Vector class for educational purposes.  <a href="classMyVector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a16551b83c77730e9eac2446f081f74fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16551b83c77730e9eac2446f081f74fb"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>func</b>) (int)</td></tr>
-<tr class="separator:a16551b83c77730e9eac2446f081f74fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a945692383179160a1edaeec8bb47a72e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a945692383179160a1edaeec8bb47a72e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>fillValue</b> { <b>ZERO</b>, 
+<b>RAND</b>
+ }</td></tr>
+<tr class="separator:a945692383179160a1edaeec8bb47a72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a825084035440e343c52666803240473e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a825084035440e343c52666803240473e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="myvector_8h.html#a825084035440e343c52666803240473e">vecCopy</a> (T *sourceBuffer, T *destBuffer, size_t bufferSize)</td></tr>
 <tr class="separator:a825084035440e343c52666803240473e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60adbba299200bde075752019ff3cf35"><td class="memTemplParams" colspan="2"><a class="anchor" id="a60adbba299200bde075752019ff3cf35"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a60adbba299200bde075752019ff3cf35"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt; &amp;vec)</td></tr>
+<tr class="memitem:a60adbba299200bde075752019ff3cf35"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a60adbba299200bde075752019ff3cf35"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="myvector_8h.html#a60adbba299200bde075752019ff3cf35">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt; &amp;vec)</td></tr>
 <tr class="separator:a60adbba299200bde075752019ff3cf35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5576e0f2f37e485c22005e58d5100f1f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5576e0f2f37e485c22005e58d5100f1f"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5576e0f2f37e485c22005e58d5100f1f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fillVec</b> (<a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt; &amp;vec, func)</td></tr>
-<tr class="separator:a5576e0f2f37e485c22005e58d5100f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb5be897d3ae9f276312861d88a8b72"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afeb5be897d3ae9f276312861d88a8b72"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="myvector_8h.html#afeb5be897d3ae9f276312861d88a8b72">fillVec</a> (<a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt; &amp;vec, std::function&lt; float(int)&gt;func)</td></tr>
+<tr class="separator:afeb5be897d3ae9f276312861d88a8b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>A. Mir </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Aug 12, 2018 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="afeb5be897d3ae9f276312861d88a8b72"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fillVec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; float(int)&gt;&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fills the vector object with arbitrary functions or lambdas.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>An obeject of <a class="el" href="classMyVector.html" title="A Vector class for educational purposes. ">MyVector</a> class </td></tr>
+    <tr><td class="paramname">func</td><td>An arbitrary function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a60adbba299200bde075752019ff3cf35"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMyVector.html">MyVector</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prints elements of a vector using cout operator. Example:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;MyVector&lt;int&gt; vecInt(5);</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;std::cout &lt;&lt; vecInt &lt;&lt; std::endl;</div></div><!-- fragment --> 
+</div>
+</div>
 <a class="anchor" id="a825084035440e343c52666803240473e"></a>
 <div class="memitem">
 <div class="memproto">

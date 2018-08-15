@@ -41,7 +41,7 @@
 	<iostream>
 	<sstream>
 
-1533737699 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
+1534339028 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/main.cpp
 	<iostream>
 	<memory>
 	"libdate.h"
@@ -53,6 +53,9 @@
 	"macro_func.h"
 	"template_expample.h"
 	<myvector.h>
+	<math.h>
+	<metaprograms.h>
+	<timer.h>
 
 1533391472 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/libdate.h
 	<string>
@@ -145,9 +148,10 @@
 1533565067 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/myvector.cpp
 	"myvector.h"
 
-1533738300 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/myvector.h
+1534338435 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/myvector.h
 	<iostream>
 	<string.h>
+	<functional>
 
 1533992251 source:/home/mir/mir-projects/Mir-CPP/CB-Projects/Mir-CPP-Training/src/car.cpp
 	"car.h"
@@ -261,5 +265,17 @@
 	"timer.h"
 
 1534185277 e:\archive\amir_archive\amir-personal\projects\mir-cpp\cb-projects\mir-cpp-training\include\timer.h
+	<ctime>
+
+1534073394 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/metaprograms.cpp
+	"metaprograms.h"
+
+1534073394 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/metaprograms.h
+	<math.h>
+
+1534338634 source:/home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/src/timer.cpp
+	"timer.h"
+
+1534331371 /home/mir/Mir/Mir-CPP/CB-Projects/Mir-CPP-Training/include/timer.h
 	<ctime>
 
