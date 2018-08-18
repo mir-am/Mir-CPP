@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1534584934 source:/home/mir/Documents/mlpack_bench/main.cpp
+	<iostream>
+	<mlpack/core.hpp>
+	<mlpack/core/util/cli.hpp>
+	<mlpack/core/util/mlpack_main.hpp>
+	<mlpack/methods/neighbor_search/neighbor_search.hpp>
+	<armadillo>
+
+1534587119 source:/home/mir/mir-projects/Mir-CPP/CB-Projects/mlpack_bench/main.cpp
+	<iostream>
+	<mlpack/core.hpp>
+	<mlpack/core/util/cli.hpp>
+	<mlpack/core/util/mlpack_main.hpp>
+	<mlpack/methods/neighbor_search/neighbor_search.hpp>
+	<armadillo>
+
